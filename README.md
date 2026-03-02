@@ -1,6 +1,6 @@
 # EUR Risk Parity + Volatility Targeting (2001–2026)
 
-In this project I build a fully EUR-denominated portfolio that combines:
+In this pyhton project I build a fully EUR-denominated portfolio that combines:
 
 • a diversified **risky multi-asset European basket** constructed with **Risk Parity**, and  
 • a defensive sleeve based on the **Bloomberg Euro Aggregate Government Bond Index**,  
