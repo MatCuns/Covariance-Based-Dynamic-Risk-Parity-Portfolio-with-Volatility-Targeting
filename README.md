@@ -1,26 +1,44 @@
-# EUR Risk Parity + Volatility Targeting (2001–2026)
+# USD Risk Parity + Volatility Targeting (2001–2026)
 
-In this pyhton project I build a fully EUR-denominated portfolio that combines:
+In this python project I build a fully USD-denominated portfolio that combines:
 
-• a diversified **risky multi-asset European basket** constructed with **Risk Parity**, and  
-• a defensive sleeve based on the **Bloomberg Euro Aggregate Government Bond Index**,  
+• a diversified **risky multi-asset basket** constructed with **Risk Parity**, and  
+• a defensive sleeve based on the **Bloomberg U.S. Aggregate Government Bond Index**,  
 
 and I apply a **rolling 60-day portfolio-level volatility targeting** without leverage.
 
-I design the portfolio using **1990–2000 data** and evaluate it **out-of-sample from 2001 to 2026**, comparing it to the **STOXX Europe 600 Net Return Index**.
+I design the portfolio using **1990–2000 data** and evaluate it **out of sample from 2001 to 2026**, comparing it to a broad global equity benchmark in USD.
 
-The project suppose an investment of 10000€ on the 1st of January 2001 and doesn't include further future investments or withdrawals.
+The project supposes an investment of **$10,000** on the 1st of January 2001 and doesn't include further future investments or withdrawals.
 ---
 
 ## Data
 
-I use **daily total return price CSVs (dividends included)** in EUR.
+I use **daily total return price CSVs (dividends included)** in USD.
+The assets are:
 
-The assets used are:
+As bonds -> Bloomberg U.S. Aggregate Government Bond Index  
+ 
+As Commodities: Gold, Silver, Copper
 
-• 20 European risky assets from different sectors (including commodities exposure)  
-• Bloomberg Euro Aggregate Government Bond Index  
-• STOXX Europe 600 Net Return Index  
+For stocks: I pick the HIGHEST USD MarketCap i could find per sector around 1990 (to avoid look ahead bias as much as possibile), the sectors and industry groups are chosen following GICS (https://www.msci.com/indexes/index-resources/gics) :
+Information Technology -> IBM, 
+Financials -> Citigroup, 
+Health Care -> Merck & Co,
+Industrials -> General Electric Aerospace,
+Consumer Discretionary -> McDonald's, 
+Consumer Staples -> Procter & Gamble,
+Energy -> Exxon, 
+Materials -> DuPont De Nemours Inc, 
+Utilities -> Southern Company, 
+Communication Services -> AT&T, 
+Retail-> Walmart,
+Banks -> Bank of America, 
+Insurance -> AIG, 
+Capital Goods -> Boeing,
+Transportation -> FedEx,
+Automobiles & Components -> Ford,
+Food, Beverage & Tobacco -> Coca Cola.
 
 I align all series on common trading days.
 
@@ -30,12 +48,12 @@ I align all series on common trading days.
 
 ### Step 1 — Asset universe
 
-I select **20 European risky assets** representing different sectors.  
-All assets are EUR-denominated total return series.
+I download the csv of the **20 assets** representing different sectors.  
+All assets are USD-denominated total return series.
 
 I also include one defensive asset:
 
-• Bloomberg Euro Aggregate Government Bond Index.
+• Bloomberg U.S. Aggregate Government Bond Index.
 
 ---
 
@@ -55,9 +73,9 @@ At the start of 2000 I set:
 
 ---
 
-### Step 3 — Out-of-sample period (2001–2026)
+### Step 3 — Out of sample period (2001–2026)
 
-I impose a **no-leverage constraint**.  
+I impose a **no leverage constraint**.  
 The total risky exposure never exceeds 100%.
 
 This project focuses on risk control.
@@ -96,7 +114,7 @@ Every 5 years I recompute the risky basket:
 
 This allows the portfolio structure to adapt to changing correlations.
 
-Example schedule:
+Example schedule:  
 • 2005 uses 2000–2004  
 • 2010 uses 2005–2009  
 • 2015 uses 2010–2014  
@@ -107,7 +125,7 @@ Example schedule:
 
 ### Step 6 — Trading costs
 
-I include transaction costs based on **Interactive Brokers commission levels**, applied to traded notional at each rebalance.
+I include transaction costs based on **Interactive Brokers commission levels**, applied at each rebalance.
 
 This prevents unrealistic performance caused by excessive trading.
 
@@ -115,11 +133,7 @@ This prevents unrealistic performance caused by excessive trading.
 
 ## Benchmark
 
-I compare performance to:
-
-• STOXX Europe 600 Net Return Index (EUR)
-
-from 2001 to 2026.
+I compare performance to the S&P 500 Index from 2001 to 2026.
 
 ---
 
@@ -140,12 +154,12 @@ And I compare it with the benchmark.
 
 ---
 
-## Methodology Safeguards
+## Methodology
 
 I avoid look-ahead bias by using only past data.  
 I separate in-sample (1990–2000) from out-of-sample (2001–2026).  
-I keep all series in EUR to avoid FX effects.
-
+I keep all series in USD for consistency.
+My goal is to have a lower risk and higher sharpe ratio than the amrket, not to beat it.
 ---
 
 ## Disclaimer
