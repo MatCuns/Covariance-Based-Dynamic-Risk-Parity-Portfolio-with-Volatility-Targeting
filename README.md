@@ -1,6 +1,6 @@
 # USD Risk Parity + Volatility Targeting (2001–2026)
 
-In this python project I build a fully USD-denominated portfolio that combines:
+In this python project I build a USD portfolio that combines:
 
 • a diversified **risky multi-asset basket** constructed with **Risk Parity**, and  
 • a defensive sleeve based on the **Bloomberg U.S. Aggregate Government Bond Index**,  
