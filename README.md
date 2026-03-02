@@ -5,21 +5,22 @@ In this pyhton project I build a fully EUR-denominated portfolio that combines:
 • a diversified **risky multi-asset European basket** constructed with **Risk Parity**, and  
 • a defensive sleeve based on the **Bloomberg Euro Aggregate Government Bond Index**,  
 
-and I apply **rolling 60-day portfolio-level volatility targeting** without leverage.
+and I apply a **rolling 60-day portfolio-level volatility targeting** without leverage.
 
-I design the portfolio using **1990–2000 data** and evaluate it **out-of-sample from 2001 to 2026**, comparing it to the **STOXX Europe 600 Total Return Index**.
+I design the portfolio using **1990–2000 data** and evaluate it **out-of-sample from 2001 to 2026**, comparing it to the **STOXX Europe 600 Net Return Index**.
 
+The project suppose an investment of 10000€ on the 1st of January 2001 and doesn't include further future investments or withdrawals.
 ---
 
 ## Data
 
 I use **daily total return price CSVs (dividends included)** in EUR.
 
-I require:
+The assets used are:
 
 • 20 European risky assets from different sectors (including commodities exposure)  
 • Bloomberg Euro Aggregate Government Bond Index  
-• STOXX Europe 600 Total Return Index  
+• STOXX Europe 600 Net Return Index  
 
 I align all series on common trading days.
 
@@ -116,7 +117,7 @@ This prevents unrealistic performance caused by excessive trading.
 
 I compare performance to:
 
-• STOXX Europe 600 Total Return Index (EUR)
+• STOXX Europe 600 Net Return Index (EUR)
 
 from 2001 to 2026.
 
