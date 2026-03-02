@@ -54,9 +54,7 @@ At the start of 2000 I set:
 
 Inside the risky basket I allocate:
 
-\[
-w_i^{total} = 0.90 \times w_i^{risk\ parity}
-\]
+$$w_i^{total} = 0.90 \times w_i^{risk\ parity}$$
 
 This portfolio becomes my starting allocation for the out-of-sample period.
 
