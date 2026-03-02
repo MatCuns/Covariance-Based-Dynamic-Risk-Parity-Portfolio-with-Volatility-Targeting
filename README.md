@@ -1,0 +1,2 @@
+# Covariance-Based-Dynamic-Risk-Parity-Portfolio-With-Volatility-Targeting
+Volatility targeted Risk Parity portfolio with a 12% volatility target across 20 European sector assets and a bond allocation. Built on 1990 to 2000 data and tested out of sample from 2001 to 2026 using a 60 day rolling covariance window, no leverage, five year rebalancing, IBKR transaction costs included. Benchmarked against STOXX Europe 600 TR.
