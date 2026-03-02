@@ -45,18 +45,12 @@ Using daily returns from **1990–2000**, I:
 1. Compute the covariance matrix of the 20 risky assets.
 2. Solve for **Risk Parity weights** so that each asset contributes equally to portfolio variance.
 
-This gives weights \( w_i \) for the risky basket.
+This gives weights $$( w_i \)$$ for the risky basket.
 
 At the start of 2000 I set:
 
 • Bond weight = **10%**  
 • Risky basket weight = **90%**
-
-Inside the risky basket I allocate:
-
-$$w_i^{total} = 0.90 \times w_i^{risk\ parity}$$
-
-This portfolio becomes my starting allocation for the out-of-sample period.
 
 ---
 
