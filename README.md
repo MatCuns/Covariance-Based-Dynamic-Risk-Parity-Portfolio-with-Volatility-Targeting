@@ -67,7 +67,7 @@ This project focuses on risk control.
 
 I estimate portfolio volatility using a **rolling 60-day window** of past returns.
 
-Target volatility = **12% annualized**.
+Target volatility = **12%**.
 
 At each rebalance date I:
 
