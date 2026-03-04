@@ -19,7 +19,7 @@ The assets are:
 
 As bonds -> Bloomberg U.S. Aggregate Government Bond Index  
  
-As commodities: Gold, Silver, Platinum
+As commodities: Gold, Oil, Copper. These represent three different parts of the commodity market. Gold as safe haven and inflation dynamics, oil captures the energy market and global demand shocks, and copper represents industrial activity and the global economic cycle.
 
 For stocks: I pick the HIGHEST USD MarketCap i could find per sector around 1990 (to avoid look ahead bias as much as possibile), the sectors and industry groups are chosen following GICS (https://www.msci.com/indexes/index-resources/gics) :
 Information Technology -> IBM, 
@@ -48,8 +48,8 @@ I align all series on common trading days.
 
 ### Step 1 — Asset universe
 
-I download the csv of the **20 assets** representing different sectors.  
-All assets are USD-denominated total return series.
+I download the csv of the **20 assets** representing different sectors from Stooq website https://stooq.com/.  
+All assets are USD.
 
 I also include one defensive asset:
 
