@@ -3,7 +3,7 @@
 In this python project I build a USD portfolio that combines:
 
 • a diversified **risky multi asset basket** constructed with **Risk Parity**, and  
-• a defensive sleeve based on the **Bloomberg U.S. Aggregate Government Bond Index**,  
+• a defensive sleeve based on the **3 Month US Treasury Bill**,  
 
 and I apply a **rolling 60-day portfolio-level volatility targeting** without leverage.
 
@@ -17,7 +17,7 @@ The project supposes an investment of **$10,000** on the 1st of January 2001 and
 I use **daily total return price CSVs (dividends included)** in USD.
 The assets are:
 
-As bonds -> Bloomberg U.S. Aggregate Government Bond Index  
+As bonds -> 3 Month US Treasury Bill  
  
 As commodities: Gold, Oil, Copper. These represent three different parts of the commodity market. Gold as safe haven and inflation dynamics, oil captures the energy market and global demand shocks, and copper represents industrial activity and the global economic cycle.
 
@@ -53,7 +53,7 @@ All assets are USD.
 
 I also include one defensive asset:
 
-• Bloomberg U.S. Aggregate Government Bond Index.
+• 3 Month US Treasury Bill from FRED website, on which i will compute the daily yields https://fred.stlouisfed.org/series/DTB3
 
 ---
 
