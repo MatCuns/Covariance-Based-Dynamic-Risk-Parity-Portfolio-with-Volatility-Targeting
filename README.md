@@ -2,7 +2,7 @@
 
 In this python project I build a USD portfolio that combines:
 
-• a diversified **risky multi-asset basket** constructed with **Risk Parity**, and  
+• a diversified **risky multi asset basket** constructed with **Risk Parity**, and  
 • a defensive sleeve based on the **Bloomberg U.S. Aggregate Government Bond Index**,  
 
 and I apply a **rolling 60-day portfolio-level volatility targeting** without leverage.
