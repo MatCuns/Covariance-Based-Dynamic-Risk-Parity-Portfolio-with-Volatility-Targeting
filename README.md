@@ -19,7 +19,7 @@ The assets are:
 
 As bonds -> Bloomberg U.S. Aggregate Government Bond Index  
  
-As commodities: Gold, Silver, Copper
+As commodities: Gold, Silver, Platinum
 
 For stocks: I pick the HIGHEST USD MarketCap i could find per sector around 1990 (to avoid look ahead bias as much as possibile), the sectors and industry groups are chosen following GICS (https://www.msci.com/indexes/index-resources/gics) :
 Information Technology -> IBM, 
