@@ -40,7 +40,7 @@ Transportation -> FedEx,
 Automobiles & Components -> Ford,
 Food, Beverage & Tobacco -> Coca Cola.
 
-I align all series on common trading days.
+I align all series on common trading days and forward fill with a maximum of 1 day NaN.
 
 ---
 
