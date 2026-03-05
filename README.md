@@ -1,4 +1,4 @@
-# USD Risk Parity + Volatility Targeting (2001–2026)
+# USD Risk Parity + Volatility Targeting (2000–2026)
 
 In this python project I build a USD portfolio that combines:
 
@@ -7,7 +7,7 @@ In this python project I build a USD portfolio that combines:
 
 and I apply a **rolling 60-day portfolio-level volatility targeting** without leverage.
 
-I design the portfolio using **1990–2000 data** and evaluate it **out of sample from 2001 to 2026**, comparing it to the S&P 500 as benchmark.
+I design the portfolio using **1990–2000 data** and evaluate it **out of sample from 2000 to 2026**, comparing it to the S&P 500 as benchmark.
 
 The project supposes an investment of **$10,000** on the 1st of January 2001 and doesn't include further future investments or withdrawals.
 ---
@@ -60,7 +60,7 @@ I also include one defensive asset:
 
 ### Step 2 — Initial portfolio design (1990–2000)
 
-Using daily returns from **1990–2000**, I:
+Using daily returns from **1990–1999**, I:
 
 1. Compute the covariance matrix of the 20 risky assets.
 2. Solve for **Risk Parity weights** so that each asset contributes equally to portfolio variance.
@@ -74,7 +74,7 @@ At the start of 2000 I set:
 
 ---
 
-### Step 3 — Out of sample period (2001–2026)
+### Step 3 — Out of sample period (2000–2026)
 
 I impose a **no leverage constraint**.  
 The total risky exposure never exceeds 100%.
