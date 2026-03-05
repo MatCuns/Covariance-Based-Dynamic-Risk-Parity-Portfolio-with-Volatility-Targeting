@@ -49,7 +49,7 @@ I align all series on common trading days and forward fill with a maximum of 1 d
 ### Step 1 — Asset universe
 
 I download the csv of the **20 assets** representing different sectors from Stooq website https://stooq.com/.  
-Oil sot price csv is downloaded from FRED website https://fred.stlouisfed.org/series/DCOILWTICO
+Oil sot price csv is downloaded from FRED website https://fred.stlouisfed.org/series/DCOILWTICO, excluding 20 april 2020 (negative price)
 All assets are USD.
 
 I also include one defensive asset:
