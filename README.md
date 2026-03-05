@@ -151,15 +151,7 @@ I compute:
 • Total transaction costs  
 
 And I compare it with the benchmark.
-
----
-
-## Methodology
-
-I avoid look-ahead bias by using only past data.  
-I separate in-sample (1990–2000) from out-of-sample (2001–2026).  
-I keep all series in USD for consistency.
-My goal is to have a lower risk and higher sharpe ratio than the amrket, not to beat it.
+My goal is to have a lower risk and higher sharpe ratio than the market, not to beat it.
 
 ---
 
