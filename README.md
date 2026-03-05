@@ -25,7 +25,7 @@ For stocks: I pick the HIGHEST USD MarketCap i could find per sector around 1990
 Information Technology -> IBM, 
 Financials -> Citigroup, 
 Health Care -> Merck & Co,
-Industrials -> General Electric Aerospace,
+Industrials -> General Electric Co,
 Consumer Discretionary -> McDonald's, 
 Consumer Staples -> Procter & Gamble,
 Energy -> Exxon, 
