@@ -125,11 +125,18 @@ Example schedule:
 
 ---
 
-### Step 6 — Trading costs
+### Step 6 — Trading costs and Slippage
 
 I include transaction costs based on **Interactive Brokers commission levels**, applied at each rebalance.
-https://www.interactivebrokers.com/en/pricing/commissions-stocks.php USA prices
+https://www.interactivebrokers.com/en/pricing/commissions-stocks.php 
+giving that we are dealing with USD let's imagine that we are US based and take those commissions.
+
+Clearing Fees
+NSCC, DTC Fees: USD 0.00020 per share 
 This prevents unrealistic performance caused by excessive trading.
+
+Slippage
+Given that we work with higly liquid stocks I will assume a 1bp slippage (-0.01% per trade)
 
 ---
 
