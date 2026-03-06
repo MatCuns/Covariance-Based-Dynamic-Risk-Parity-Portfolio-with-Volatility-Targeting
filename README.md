@@ -106,11 +106,11 @@ I never allow leverage.
 
 ---
 
-### Step 5 — Risk Parity refresh every 5 years
+### Step 5 — Risk Parity refresh every year
 
-Every 5 years I recompute the risky basket:
+Every 1 year I recompute the risky basket:
 
-1. I use the previous 5 years of daily data.
+1. I use the previous 1 year of daily data.
 2. I recompute the covariance matrix.
 3. I solve for new Risk Parity weights.
 4. I update the risky basket allocation.
@@ -118,11 +118,10 @@ Every 5 years I recompute the risky basket:
 This allows the portfolio structure to adapt to changing correlations.
 
 Example schedule:  
-• 2005 uses 2000–2004  
-• 2010 uses 2005–2009  
-• 2015 uses 2010–2014  
-• 2020 uses 2015–2019  
-• 2025 uses 2020–2024  
+• 2005 uses 2004  
+• 2006 uses 2005 
+• 2025 uses 2024  
+and so on
 
 ---
 
