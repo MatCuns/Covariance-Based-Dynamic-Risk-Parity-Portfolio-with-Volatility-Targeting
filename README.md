@@ -128,7 +128,7 @@ Example schedule:
 ### Step 6 — Trading costs
 
 I include transaction costs based on **Interactive Brokers commission levels**, applied at each rebalance.
-
+https://www.interactivebrokers.com/en/pricing/commissions-stocks.php
 This prevents unrealistic performance caused by excessive trading.
 
 ---
