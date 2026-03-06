@@ -49,7 +49,7 @@ I align all series on common trading days and forward fill with a maximum of 1 d
 ### Step 1 — Asset universe
 
 I download the csv of the **20 assets** representing different sectors from Stooq website https://stooq.com/.  
-Oil sot price csv is downloaded from FRED website https://fred.stlouisfed.org/series/DCOILWTICO, excluding 20 april 2020 (negative price)
+Oil spot price csv is downloaded from FRED website https://fred.stlouisfed.org/series/DCOILWTICO, excluding 20 april 2020 (negative price)
 All assets are USD.
 
 I also include one defensive asset:
@@ -94,6 +94,7 @@ At each rebalance date I:
 1. Compute realized portfolio volatility over the previous 60 trading days.
 2. Compare it with the 12% target.
 3. Reallocate between the risky basket and the bond sleeve.
+4. Deduct transaction costs
 
 If volatility is above target → I increase bond weight.  
 If volatility is below target → I increase risky weight.
