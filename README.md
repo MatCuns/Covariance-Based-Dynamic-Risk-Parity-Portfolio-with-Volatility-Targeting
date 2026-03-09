@@ -131,12 +131,8 @@ I include transaction costs based on **Interactive Brokers commission levels**, 
 https://www.interactivebrokers.com/en/pricing/commissions-stocks.php 
 giving that we are dealing with USD let's imagine that we are US based and take those commissions.
 
-Clearing Fees
-NSCC, DTC Fees: USD 0.00020 per share 
-This prevents unrealistic performance caused by excessive trading.
-
 Slippage
-Given that we work with higly liquid stocks I will assume a 1bp slippage (-0.01% per trade)
+Given that we work with higly liquid stocks I will assume a 2bp slippage (-0.02% per trade)
 
 ---
 
