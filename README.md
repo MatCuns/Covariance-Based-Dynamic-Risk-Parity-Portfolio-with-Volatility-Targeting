@@ -95,7 +95,7 @@ At each rebalance I:
 1. Compute realized portfolio volatility over the previous 60 trading days.
 2. Compare it with the 12% target.
 3. Reallocate between the risky basket and the bond sleeve.
-4. Deduct transaction costs
+4. Deduct transaction costs.
 
 If volatility is above target → I increase bond weight and reduce risky exposure.  
 If volatility is below target → I increase risky weight and reduce the bond sleeve.
@@ -120,7 +120,7 @@ This allows the portfolio structure to adapt to changing correlations.
 Example schedule:  
 • 2005 uses 2004  
 • 2024 uses 2023   
-and so on
+and so on.
 
 ---
 
@@ -131,7 +131,7 @@ https://www.interactivebrokers.com/en/pricing/commissions-stocks.php
 giving that we are dealing with USD let's imagine that we are US based and take those commissions.
 
 Slippage
-Given that we work with higly liquid stocks I will assume a 2bp slippage (-0.02% per trade)
+Given that we work with higly liquid stocks I will assume a 2bp slippage (-0.02% per trade).
 
 ---
 
