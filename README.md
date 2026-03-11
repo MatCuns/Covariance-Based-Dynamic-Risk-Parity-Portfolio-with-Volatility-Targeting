@@ -2,11 +2,11 @@
 
 In this python project I build a USD portfolio that combines:
 
-• a diversified **risky multi asset basket** constructed with **Risk Parity**, and updated every trading year
+• A diversified **risky multi asset basket** constructed with **Risk Parity**, and updated every trading year
 
-• a defensive sleeve based on the **3 Month US Treasury Bill**,  
+• A defensive sleeve based on the **3 Month US Treasury Bill**,  
 
-and I apply a **rolling 60-day portfolio-level volatility targeting** without leverage.
+and I apply a **rolling 60 day volatility targeting on the risky assets portfolio** without leverage.
 
 I design the portfolio using **1990–2000 data** and evaluate it **out of sample from 2000 to 2026**, comparing it to the S&P 500 as benchmark.
 
@@ -55,7 +55,7 @@ All assets are USD.
 
 I also include one defensive asset:
 
-• 3 Month US Treasury Bill from FRED website, on which i will compute the daily yields https://fred.stlouisfed.org/series/DTB3
+• 3 Month US Treasury Bill from FRED website, on which i will compute the daily yields  and use it as risk free rate https://fred.stlouisfed.org/series/DTB3
 
 ---
 
@@ -70,7 +70,7 @@ This gives weights $$( w_i \)$$ for the risky basket.
 
 At the start of 2000 I set:
 
-• Bond weight = **10%**  
+• Bonds weight = **10%**  
 • Risky basket weight = **90%**
 
 ---
@@ -86,19 +86,19 @@ This project focuses on risk control.
 
 ### Step 4 — Volatility targeting
 
-I estimate portfolio volatility using a **rolling 60-day window** of past returns.
+I estimate portfolio volatility using a **rolling 60 day window** of past returns.
 
-Target volatility = **12%**.
+Target volatility = **12%** checked daily.
 
-At each rebalance date I:
+At each rebalance I:
 
 1. Compute realized portfolio volatility over the previous 60 trading days.
 2. Compare it with the 12% target.
 3. Reallocate between the risky basket and the bond sleeve.
 4. Deduct transaction costs
 
-If volatility is above target → I increase bond weight.  
-If volatility is below target → I increase risky weight.
+If volatility is above target → I increase bond weight and reduce risky exposure.  
+If volatility is below target → I increase risky weight and reduce the bond sleeve.
 
 I keep the relative weights inside the risky basket unchanged during this step.
 
@@ -108,7 +108,7 @@ I never allow leverage.
 
 ### Step 5 — Risk Parity refresh every year
 
-Every 1 year I recompute the risky basket:
+Every trading year I recompute the risky basket:
 
 1. I use the previous 1 year of daily data.
 2. I recompute the covariance matrix.
@@ -148,15 +148,12 @@ I compute:
 
 • Compound Annual Growth Rate (CAGR)  
 • Annualized volatility  
-• Sharpe ratio  
-• Sortino ratio  
+• Sharpe ratio    
 • Maximum drawdown  
-• Calmar ratio  
-• Total turnover  
 • Total transaction costs  
 
 And I compare it with the benchmark.
-My goal is to have a lower risk and higher sharpe ratio than the market, not to beat it.
+My goal is to have a lower risk and higher sharpe ratio than the market/benchmark , not to beat it in terms of returns.
 
 ---
 
