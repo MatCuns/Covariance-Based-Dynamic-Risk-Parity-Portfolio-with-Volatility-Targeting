@@ -119,8 +119,7 @@ This allows the portfolio structure to adapt to changing correlations.
 
 Example schedule:  
 • 2005 uses 2004  
-• 2006 uses 2005 
-• 2025 uses 2024  
+• 2024 uses 2023   
 and so on
 
 ---
