@@ -2,7 +2,7 @@
 
 In this python project I build a USD portfolio that combines:
 
-• a diversified **risky multi asset basket** constructed with **Risk Parity**, and updated every 5 years
+• a diversified **risky multi asset basket** constructed with **Risk Parity**, and updated every trading year
 
 • a defensive sleeve based on the **3 Month US Treasury Bill**,  
 
