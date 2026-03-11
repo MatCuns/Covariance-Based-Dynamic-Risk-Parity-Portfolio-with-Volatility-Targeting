@@ -8,7 +8,7 @@ In this python project I build a USD portfolio that combines:
 
 and I apply a **rolling 60 day volatility targeting on the risky assets portfolio** without leverage.
 
-I design the portfolio using **1990–2000 data** and evaluate it **out of sample from 2000 to 2026**, comparing it to the S&P 500 as benchmark.
+I design the portfolio using **1990–2000 data**, check if it is really diversified by computing the eigen values of the correlation matrix obtaining the effective numeber of bets and evaluate it **out of sample from 2000 to 2026**, comparing it to the S&P 500 as benchmark.
 
 The project supposes an investment of **$10,000** on the 1st of January 2001 and doesn't include further future investments or withdrawals.
 ---
