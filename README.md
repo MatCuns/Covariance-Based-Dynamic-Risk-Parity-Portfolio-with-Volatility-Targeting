@@ -1,3 +1,4 @@
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3.11%2B-blue)
 ![Status](https://img.shields.io/badge/Status-Finished-brightgreen)
 # USD Risk Parity + Volatility Targeting (2000–2026)
