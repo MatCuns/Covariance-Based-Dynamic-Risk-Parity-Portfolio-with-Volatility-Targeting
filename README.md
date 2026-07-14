@@ -1,3 +1,5 @@
+![Python](https://img.shields.io/badge/Python-3.11%2B-blue)
+![Status](https://img.shields.io/badge/Status-Finished-brightgreen)
 # USD Risk Parity + Volatility Targeting (2000–2026)
 
 In this python project I build a USD portfolio that combines:
